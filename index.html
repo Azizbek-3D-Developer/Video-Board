@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Application</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <!-- Navigation Section 1 -->
+        <div class="nav-section nav-links">
+            <!--
+            <a href="#" class="nav-button">Button 1</a>
+            <a href="#" class="nav-button">Button 2</a>
+            <a href="#" class="nav-button">Button 3</a>
+            -->
+        </div>
+
+        <!-- Navigation Section 2 -->
+        <div class="nav-section nav-actions">
+            <button type="button" class="nav-button export-button"
+                    id="exportButton">
+                Export
+            </button>
+        </div>
+
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <div class="main-container">
+
+            <!-- Section 1: Upload and Input -->
+            <section class="panel input-panel">
+
+                <h2>Upload & Input</h2>
+
+                <form id="inputForm">
+
+                    <div class="form-group">
+                        <label for="fileUpload">Upload File</label>
+                        <input
+                            type="file"
+                            id="fileUpload"
+                            name="file"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="textInput">Enter Value</label>
+                        <input
+                            type="text"
+                            id="textInput"
+                            name="textInput"
+                            placeholder="Enter something..."
+                        >
+                    </div>
+
+                    <button type="submit" class="submit-button">
+                        Submit
+                    </button>
+
+                </form>
+
+            </section>
+
+            <!-- Section 2: Grid -->
+            <section class="panel grid-panel">
+
+                <h2>Data Grid</h2>
+
+                <div class="grid-container" id="dataGrid">
+                    <!-- Grid items will be added with JavaScript -->
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <span>Owner: Azizbek Axmatjonov</span>
+        <span>Year 2026</span>
+    </footer>
+<script src="./scripts/main.js"></script>
+</body>
+</html>
